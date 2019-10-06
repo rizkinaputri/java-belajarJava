@@ -502,8 +502,8 @@ public class penilaian extends javax.swing.JFrame {
         int Polahraga = Integer.parseInt(pOlahraga.getText());
         int Kolahraga = Integer.parseInt(kOlahraga.getText());
         
-        int rataRataPengetahuan = Pbin + Pbing + Pmtk + Pfisika  + Pbiologi + Pkimia + Ppkn + Ppai + Polahraga ;
-        int rataRataKeterampilan = Kbin + Kbing + Kmtk + Kfisika  + Kbiologi + Kkimia + Kpkn + Kpai + Kolahraga ;
+        int rataRataPengetahuan = (Pbin + Pbing + Pmtk + Pfisika  + Pbiologi + Pkimia + Ppkn + Ppai + Polahraga)/9 ;
+        int rataRataKeterampilan = (Kbin + Kbing + Kmtk + Kfisika  + Kbiologi + Kkimia + Kpkn + Kpai + Kolahraga)/9 ;
         int rataRataTotal = (rataRataPengetahuan + rataRataKeterampilan) / 2;
         
         rataPengetahuan.setText("" + rataRataPengetahuan);
